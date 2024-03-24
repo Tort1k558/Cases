@@ -1,0 +1,20 @@
+.main-content{
+  padding-left: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#root{
+  height: 100%;
+  background-color: #000;
+  
+}
+
+.rarity-1 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(24,26,30) 100%); }
+.rarity-2 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(44,47,53) 100%); }
+.rarity-3 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(23,41,83) 100%); }
+.rarity-4 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(47,30,83) 100%); }
+.rarity-5 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(79,30,83) 100%); }
+.rarity-6 { background: linear-gradient(180deg,rgb(24,26,30) 0%,rgb(145, 38, 22) 100%); }
+.rarity-7 { background-color: yellow; }

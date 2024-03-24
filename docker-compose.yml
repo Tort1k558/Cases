@@ -1,0 +1,26 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend/media:/app/media
+    environment:
+      FRONT_URL: ${FRONT_URL}
+      MARKET_KEY: ${MARKET_KEY}
+      STEAM_KEY: ${STEAM_KEY}
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - REACT_APP_BACKEND=${BACKEND_URL}
+  nginx:
+    image: nginx:latest
+    ports:
+      - "443:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - backend
+      - frontend

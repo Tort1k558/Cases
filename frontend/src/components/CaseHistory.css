@@ -1,0 +1,51 @@
+.case-history {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #333;
+  text-align: center;
+}
+
+.case-history h2 {
+  font-size: 18px;
+}
+
+.item-cards {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.item-card {
+  position: relative;
+  text-align: center;
+  height: 125px;
+}
+  
+.item-name {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+}
+
+.item-card img {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.anim{
+  transform: translateY(-150%);
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+  

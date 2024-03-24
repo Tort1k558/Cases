@@ -1,0 +1,110 @@
+header {
+  background-color: #111111; 
+  padding-right: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  height: 75px;
+}
+
+.logo {
+  position: fixed;
+  width: 200px; 
+  height: 75px;
+}
+
+.logo img {
+  max-height: 100%;
+  width: 100%;
+}
+
+
+.header-container {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container a {
+  text-decoration: none;
+}
+
+.header-user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-user-deposit {
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 3px 5px;
+  color: #e100ff;
+  border: 2px solid #e100ff;
+  border-radius: 7px;
+  background: #2A252C;
+}
+
+.header-user-deposit:hover {
+  background-color: #e100ff;
+  color: #050801;
+  box-shadow: 0px 0px 5px #e100ff, 0px 0px 25px #e100ff, 0px 0px 50px #e100ff, 0px 0px 100px #e100ff;
+}
+
+.header-user-info {
+  display: flex;
+  align-items: center;
+  background-color: #2A252C; 
+  color: #fff; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  margin-left: auto;
+  border: 2px solid #e100ff;
+}
+
+.header-user-info:hover {
+  background-color: #e100ff;
+  color: #050801;
+  box-shadow: 0px 0px 5px #e100ff, 0px 0px 25px #e100ff, 0px 0px 50px #e100ff, 0px 0px 100px #e100ff;
+}
+
+
+.header-user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid #B9135E;
+}
+
+
+.header-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user-username {
+  margin-bottom: 5px; 
+}
+
+.header-user-balance {
+  font-size: 12px;
+}
+
+.header-login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-login-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
